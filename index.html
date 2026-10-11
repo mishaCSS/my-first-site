@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Мой первый сайт</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
+      h1 { color: #333; }
+      p { line-height: 1.6; color: #444; }
+    </style>
+  </head>
+  <body>
+    <h1>Привет, мир!</h1>
+    <p>Это мой первый сайт. Я написал его на HTML и CSS.</p>
+    <button id="btn">Нажми меня</button>
+    <p id="status"></p>
+<p>На этом сайте я буду тренироваться в создании сайтов,добавлении всяческих приколов и т.д.</p>
+<p>Буду добавлять скрипты, изучать и добавлять новые языки для кодирования.</p>
+<p>Если кому-то интересно будет помогать мне в этом, то я буду не против если кто-то будет помогать в изучении;)</p>
+
+    <script>
+      const btn = document.getElementById('btn');
+      const status = document.getElementById('status');
+      let count = 0;
+
+      btn.addEventListener('click', () => {
+        count++;
+        status.textContent = `Ты нажал кнопку ${count} раз(а)`;
+      });
+    </script>
+  </body>
+</html>
